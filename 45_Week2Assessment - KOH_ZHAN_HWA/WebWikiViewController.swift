@@ -10,9 +10,26 @@ import UIKit
 
 class WebWikiViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
+    var selectedAppleProduct: AppleProduct = AppleProduct(name: "", releaseDate: "", imageName: "", wikiUrl: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadTheUrl(with: selectedAppleProduct.wikiUrl)
     }
+    
+    func loadTheUrl(with String: String) {
+        
+        guard let url = URL(string : String) else {
+            print("Invalid urlString: \(String)")
+            return
+        }
+        
+        let request = URLRequest(url: url)
+        webView.loadRequest(request)
+        
+    }
+    
+    
 }
