@@ -14,6 +14,7 @@
 		87AF3AB41F46851B00F90771 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF3AB31F46851B00F90771 /* ListViewController.swift */; };
 		87AF3AB61F46872F00F90771 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF3AB51F46872F00F90771 /* ProductListTableViewCell.swift */; };
 		87AF3AB81F468AB500F90771 /* AppleProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF3AB71F468AB500F90771 /* AppleProduct.swift */; };
+		87AF3ABA1F4691D800F90771 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF3AB91F4691D800F90771 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		87AF3AB31F46851B00F90771 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		87AF3AB51F46872F00F90771 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
 		87AF3AB71F468AB500F90771 /* AppleProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleProduct.swift; sourceTree = "<group>"; };
+		87AF3AB91F4691D800F90771 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				87AF3AB31F46851B00F90771 /* ListViewController.swift */,
 				87AF3AB51F46872F00F90771 /* ProductListTableViewCell.swift */,
 				87AF3AB71F468AB500F90771 /* AppleProduct.swift */,
+				87AF3AB91F4691D800F90771 /* DetailViewController.swift */,
 				87AF3AA51F46842600F90771 /* Main.storyboard */,
 				87AF3AA81F46842600F90771 /* Assets.xcassets */,
 				87AF3AAA1F46842600F90771 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				87AF3AB81F468AB500F90771 /* AppleProduct.swift in Sources */,
 				87AF3AB61F46872F00F90771 /* ProductListTableViewCell.swift in Sources */,
+				87AF3ABA1F4691D800F90771 /* DetailViewController.swift in Sources */,
 				87AF3AA21F46842600F90771 /* AppDelegate.swift in Sources */,
 				87AF3AB41F46851B00F90771 /* ListViewController.swift in Sources */,
 			);
