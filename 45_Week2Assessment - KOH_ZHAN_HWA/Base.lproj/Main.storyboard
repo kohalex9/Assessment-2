@@ -12,7 +12,7 @@
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="_5_Week2Assessment___KOH_ZHAN_HWA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ListViewController" customModule="_5_Week2Assessment___KOH_ZHAN_HWA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,12 +89,72 @@
                     <view key="view" contentMode="scaleToFill" id="gR8-GA-NhA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxs-Ly-7xK">
+                                <rect key="frame" x="82" y="75" width="210" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Release Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wug-XX-SCN">
+                                <rect key="frame" x="82" y="122" width="210" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2I-Ps-zbg">
+                                <rect key="frame" x="16" y="169" width="343" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="productImageView" destination="r2I-Ps-zbg" id="2j8-hA-JrA"/>
+                        <outlet property="productNameLabel" destination="Yxs-Ly-7xK" id="nYh-Sd-CHJ"/>
+                        <outlet property="releaseDateLabel" destination="wug-XX-SCN" id="flH-YO-xaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5N2-C8-rhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="20"/>
+            <point key="canvasLocation" x="1581.5999999999999" y="19.340329835082461"/>
+        </scene>
+        <!--Web Wiki View Controller-->
+        <scene sceneID="X03-O1-vGk">
+            <objects>
+                <viewController id="20L-0a-vnp" customClass="WebWikiViewController" customModule="_5_Week2Assessment___KOH_ZHAN_HWA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BV2-7W-Cst"/>
+                        <viewControllerLayoutGuide type="bottom" id="3C3-fG-vOq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1TO-0W-dKv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSL-rn-aA6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-bJ-Jwp">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tSL-rn-aA6" firstAttribute="top" secondItem="BV2-7W-Cst" secondAttribute="bottom" id="3oP-Rj-iOL"/>
+                            <constraint firstAttribute="trailing" secondItem="tSL-rn-aA6" secondAttribute="trailing" id="Zq8-4g-YkG"/>
+                            <constraint firstItem="3C3-fG-vOq" firstAttribute="top" secondItem="tSL-rn-aA6" secondAttribute="bottom" id="abM-Ad-ank"/>
+                            <constraint firstItem="tSL-rn-aA6" firstAttribute="leading" secondItem="1TO-0W-dKv" secondAttribute="leading" id="nye-JQ-c6Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="his-jA-b17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2207" y="19"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yMA-dM-xUd">

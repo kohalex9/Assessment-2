@@ -62,8 +62,11 @@ extension ListViewController: UITableViewDelegate {
         
         let selectedAppleProduct = appleProducts[indexPath.row]
         
+        //Go to detailVC when the specific apple product is clicked
         let mainStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let destination = mainStoryBoard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
+        
+        destination.appleProductToBeShown = selectedAppleProduct
         
         navigationController?.pushViewController(destination, animated: true)
     }

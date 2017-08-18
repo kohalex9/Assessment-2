@@ -9,12 +9,26 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var releaseDateLabel: UILabel!
+    @IBOutlet weak var productImageView: UIImageView!
+    
+    
+    var appleProductToBeShown = AppleProduct(name: "", releaseDate: "", imageName: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        productNameLabel.text = appleProductToBeShown.name
+        releaseDateLabel.text = appleProductToBeShown.releaseDate
+        productImageView.image = appleProductToBeShown.image
+        
         
     }
 
 
 }
+
+
+
