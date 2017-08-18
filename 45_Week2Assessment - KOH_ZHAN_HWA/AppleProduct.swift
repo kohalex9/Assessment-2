@@ -12,11 +12,14 @@ import UIKit
 class AppleProduct {
     var name: String
     var releaseDate : String
-    var imageName: String
+    var image : UIImage = UIImage()
     
     init(name: String, releaseDate: String, imageName: String) {
         self.name = name
         self.releaseDate = releaseDate
-        self.imageName = imageName
+        
+        if let imageApple = UIImage(named: imageName) {
+            self.image = imageApple
+        }
     }
 }
