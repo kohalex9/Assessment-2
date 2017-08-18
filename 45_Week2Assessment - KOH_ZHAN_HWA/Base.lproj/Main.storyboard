@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="924" y="21.139430284857571"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="2M5-Cx-9OG">
             <objects>
-                <viewController id="Zid-L6-q0j" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="Zid-L6-q0j" customClass="DetailViewController" customModule="_5_Week2Assessment___KOH_ZHAN_HWA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dRr-NJ-Y7l"/>
                         <viewControllerLayoutGuide type="bottom" id="hBj-xd-Q7h"/>

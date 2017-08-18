@@ -17,6 +17,9 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.reloadData()
+        
+        tableView.delegate = self
         
         //Make 5 instances of AppleProducts
         let appleI = AppleProduct(name: "Apple I", releaseDate: "July 1", imageName: "Apple_I")
@@ -51,20 +54,35 @@ extension ListViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
+extension ListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedAppleProduct = appleProducts[indexPath.row]
+        
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let destination = mainStoryBoard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
+        
+        navigationController?.pushViewController(destination, animated: true)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
